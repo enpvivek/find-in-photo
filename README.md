@@ -1,71 +1,90 @@
 # 📸 Photo Tagging App
 
-A photo tagging app built with React and Firestore. Challenge yourself to find the hidden character in each scene, and see how fast you can do it. 
+A fast-paced photo tagging game built with **React** and **Firestore**. Find hidden characters in large images as quickly as possible — it's a fun challenge to test your attention to detail and memory!
 
 ![GIF of project](website.gif)
 
-[▶ Live Preview](https://enigma69.web.app/)
+🎮 [**Live Demo**](https://enigma69.web.app/)
 
-# 🚀Features
-* Light and dark themes
-* Mobile-responsive design
-* User authentication with Google
-* Photo zooming
-* Reveal position of character if stuck (available every minute)
-* Multiple maps with randomized characters
-* Global leaderboard for each map
-* Profile page with statistics and settings section
-# 🛠 Installation
+---
 
-Clone repository locally
+## 🚀 Features
+
+- 🌙 Light & dark mode support  
+- 📱 Fully mobile responsive  
+- 🔐 Google authentication  
+- 🔍 Zoomable photos for precision  
+- 🆘 "Reveal character" hint (available every 60 seconds)  
+- 🗺️ Multiple maps with random character placement  
+- 🏆 Global leaderboards per map  
+- 🙋 Personalized profile with stats & settings  
+
+---
+
+## 🛠️ Getting Started
+
+### Clone the repository
 
 ```bash
-git clone git@github.com:creme332/my-odin-projects.git
+git clone git@github.com:enpvivek/find-in-photo.git
 ```
 
-Move to project directory
+### Move to project directory
 
 ```
 cd my-odin-projects/photo-tagging
 ```
 
-Install dependencies
+### Install dependencies
 
 ```bash
 npm install
 ```
 
-Launch web app  
+### Launch web app  
 
 ```bash
 npm start
 ```
 
-Create a production build
+### Create a production build
 
 ```bash
 npm run build
 ```
+---
 
-# To-do
-* [ ] Add more characters/map + maps
-* [ ] Add difficulty rating to each character and rework formula for score calculation
-* [ ] Add on-screen alert when correct character is clicked so that player does not have to scroll up to check if correct.
-* [ ] Add a private subcollection for each `user`. This will be accessible only to 1 user.
-* [ ] Add more authentication methods
-* [x] Generate production build
-* [x] Use pageInsight to test website after deployment.
+## 📌 To-Do
 
-## Optimizations 
+- [ ] Add more maps and characters  
+- [ ] Introduce character difficulty ratings + improve scoring formula  
+- [ ] Show on-screen feedback when the correct character is clicked  
+- [ ] Create private Firestore subcollections per user  
+- [ ] Add support for additional login methods  
+- [x] Build production version  
+- [x] Run performance audit with PageSpeed Insights  
 
-* [ ] Use redux for state management
-  + when website first loads, make 1 request for user data. serve this data throughout web. when data changes, update stored state first then send changes to firestore. 
-  + this prevents delay for fetching data for profile page each time it is clicked
-* [ ] Rework method of setting characters. Do not save separate images for each character. Use image of map and coordinates to obtain character image dynamically
-* [ ] Rewrite everything in typescript
+---
 
-##  Extra features
+## ⚙️ Optimizations
 
-* [ ] Add a map creator page where user can upload their own maps, crop characters and upload it to firestore. Use [`Cropper.js`](https://fengyuanchen.github.io/cropperjs/).
-* [ ] add tour of website (reacttour)
-* [ ] add animation for showing character images - card animation
+- [ ] Use Redux for smarter global state handling  
+  - Fetch user data once on load, reuse throughout app  
+  - Update state first, then sync with Firestore  
+- [ ] Rework how characters are handled  
+  - Avoid saving separate images; crop from map using coordinates  
+- [ ] Rewrite in TypeScript for better type safety and scalability  
+
+---
+
+## 💡 Planned Features
+
+- [ ] **Map Creator Tool**  
+  Let users upload maps, crop characters, and save them to Firestore  
+  (Powered by [Cropper.js](https://fengyuanchen.github.io/cropperjs/))  
+
+- [ ] **Website Tour**  
+  Use `react-tour` to guide new users through features
+
+- [ ] **Animated Character Reveal**  
+  Add card-flip animation when displaying found characters  

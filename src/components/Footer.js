@@ -58,7 +58,7 @@ function FooterSocial() {
           <ActionIcon
             aria-label="Github"
             component="a"
-            href="https://github.com/creme332/my-odin-projects/tree/main/photo-tagging"
+            href="https://github.com/enpvivek/find-in-photo"
             size="lg"
           >
             <IconBrandGithub size="1.05rem" stroke={1.5} />
@@ -66,7 +66,7 @@ function FooterSocial() {
           <ActionIcon
             aria-label="Email"
             component="a"
-            href="mailto:c34560814@gmail.com"
+            href="mailto:enpvivek@gmail.com"
             size="lg"
           >
             <IconMail size="1.05rem" stroke={1.5} />
