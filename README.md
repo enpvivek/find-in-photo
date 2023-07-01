@@ -4,7 +4,7 @@ A fast-paced photo tagging game built with **React** and **Firestore**. Find hid
 
 ![GIF of project](website.gif)
 
-🎮 [**Live Demo**](https://enigma69.web.app/)
+🎮 [**Live Demo**](https://find-in-photo.vercel.app/)
 
 ---
 
